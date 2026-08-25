@@ -1,8 +1,8 @@
 # Overview 
 
 we will build 4 things
-1. Empty index.html page (filled after reset and componets css pages are filled)
-2. reset and variables.css page
+1. Empty index.html page (filled after reset and componets css pages are filled) <done>
+2. reset and variables.css page <done>
 3. compotnents.css page
 4. empty layout.css page
 

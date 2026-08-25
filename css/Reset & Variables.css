@@ -1,0 +1,26 @@
+:root {
+    --color-bg: #060606;
+    --color-text: #e1e1e1;
+    --color-primary: #5dc091;
+    --color-secondary: #97fe7b;
+
+    --font-text: Commissioner, sans-serif;
+    --font-code: JetBrains Mono, monospace;
+}
+
+* , ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* This acts as a defult. (According to my understanding) */
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100vh;
+}
