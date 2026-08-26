@@ -1,11 +1,17 @@
 :root {
-    --color-bg: #060606;
-    --color-text: #e1e1e1;
-    --color-primary: #5dc091;
-    --color-secondary: #97fe7b;
+    --color-bg: #1a1a1aff;
+    --color-text: #fceeef;
+    --color-primary: #28513d;
+    --color-primary-hover: #214332;
+    --color-secondary: #304550;
+    --color-secondary-hover: #273641;
 
     --font-text: Commissioner, sans-serif;
     --font-code: JetBrains Mono, monospace;
+
+    --raduis-sm: 4px;
+    --raduis-md: 8px;
+    --raduis-lg: 12px;
 }
 
 * , ::before, ::after {

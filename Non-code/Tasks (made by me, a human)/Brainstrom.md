@@ -24,7 +24,7 @@ We we look at the design of the 3 pages a few clear components stand out
 Lets just brain dump them and orgnize them later on
 
 - buttons
-- the "element" that will contain the submitted code and the gab
+- the "element" that will contain the submitted code and the gab (I think the best elemnt would be a code element or special designed div element)
 - the text area for submitted code
 - the text area for writing the rewrite
 - the text area for writing the explnation

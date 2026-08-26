@@ -1,0 +1,39 @@
+/* Buttons */
+
+.btn {
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: var(--raduis-sm);
+    font-family: var(--font-text);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.02) translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+/* Text Areas */
+
+.submitted-code-area {
+    
+}
