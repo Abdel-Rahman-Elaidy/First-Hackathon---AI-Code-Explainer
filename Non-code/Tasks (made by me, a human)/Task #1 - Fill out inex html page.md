@@ -11,7 +11,7 @@ we will build 3 sections, each section will corrospond to a seprate page.
 4. Building section 3: Learner page
 
 
-# Home Page
+# Home Page <done>
 - simple nav bar with just my name on the left and the apps name on the right
 - h1 that directs the user
 - text area for sumbitted code
