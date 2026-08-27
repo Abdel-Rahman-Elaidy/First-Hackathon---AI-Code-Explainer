@@ -34,4 +34,9 @@ Lets just brain dump them and orgnize them later on
 # Problems encountered (should be solved)
 1. unknown # of CSS pages and their purposes <solved>
 2. What compontents do we need? <solved?>
-3. what elemnt should contain the sumbitted code with the gab in the learner page?
+3. How can we make the textarea of what input methode take in the sumbitted code while making it look like it is in an IDE
+4. What element will take in the sumbitted code with the gab in the learner page
+5. How can we create a button that moves us from the explainer page to the learner page (for now I will use an empty button element)
+6. How can we create the button in the learner page that takes you back to explainer page
+7. How can we create the button that facts checks the input written in the learner page
+

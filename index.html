@@ -38,19 +38,91 @@
             <p class="description">Paste your code below and I'll explain it to you</p>
 
             <form>
-                <textarea id="submitted-code-textarea" name="submitted-code" cols="50" rows="25"
-                    placeholder="Paste your code here" required autocorrect="off" spellcheck="false"></textarea>
+                <textarea 
+                    id="submitted-code-textarea" 
+                    name="submitted-code" 
+                    cols="50" 
+                    rows="25"
+                    placeholder="Paste your code here" 
+                    required 
+                    autocorrect="off" 
+                    spellcheck="false"></textarea>
                 <button type="sumbit" class="btn btn-primary" id="start-btn">Explain the code</button>
             </form>
 
             <!--2 possible solutions for a button to link to a page: 1) style <a> as a button 2) Create a form that links to the page once summbited (the form is actually empty)-->
             <a class="btn btn-secondary" id="guide-btn" href="./Guide.html" target="_blank">How To Guide</a>
         </section>
+
         <section id="Explainer">
+            <!--This will take up the right side of the page-->
+            <code id="sumbitted-code-container">
+                <!--This will contained the sumbited code-->
+                <pre>
+                    <p>sample "code"</p>
+                </pre>
+            </code>
 
+            <!--this will take up the left side of the page-->
+            <div class="card">
+                <!--This will contain the big picture explanation-->
+                <h2>Big Picture Explnation</h2>
+                <p class="description">This explains the code from a zoomed out prespictive</p>
+
+            </div>
+            <div class="card">
+                <!--This will contain the line by line explanation-->
+                <h2>Line by Line Explanation</h2>
+                <p class="description">This explains each small detail of the code</p>
+                
+            </div>
+            <button class="btn btn-primary">Start your challenge</button>            
         </section>
-        <section id="Learner">
 
+        <section id="Learner">
+            <!--This will take up the left side of the page-->
+            <code id="sumbitted-gab-container">
+                <!--This will contained the sumbited code with the gab -->
+                <pre>
+                    <p>sample "code"</p>
+                </pre>
+            </code>
+
+            <!--This will take up the left side of the screen-->
+            <form id="rewrite-explnation-form">
+                <div class="card">
+                    <h2>Write the code that should go in place of the gap</h2>
+                    <p class="description">You don't have to get it right</p>
+                    <textarea
+                        id="rewrite-textarea"
+                        form="rewrite-explnation-form"
+                        name="rewritten-code"
+                        rows="10"
+                        cols="25"
+                        placeholder="Rewrite the code here"
+                        autocorrect="off"
+                        spellcheck="false"
+                        required
+                    ></textarea>
+                </div>
+                <div class="card">
+                    <h2>Explain <strong>WHY</strong> you wrote the code that you wrote</h2>
+                    <p class="description">This confirms do you really understand what you wrote</p>
+                    <textarea
+                        id="explnation-textare"
+                        form="rewrite-explnation-form"
+                        name="explnation-attempt"
+                        placeholder="Write why you wrote the code that you wrote here"
+                        autocorrect="on"
+                        spellcheck="true"
+                        rows="10"
+                        cols="25"
+                        required
+                    ></textarea>
+                </div>           
+                <button class="btn btn-primary" type="submit">Fact check my answers</button>
+            </form>
+            <button>Go back to the past page</button>
         </section>
     </main>
 </body>
