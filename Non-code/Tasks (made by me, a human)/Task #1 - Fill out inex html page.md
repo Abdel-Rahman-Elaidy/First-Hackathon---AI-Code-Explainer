@@ -9,7 +9,8 @@ we will build 3 sections, each section will corrospond to a seprate page.
 2. Building section 1: Home page <done>
 3. Building section 2: Explainer page <done>
 4. Building section 3: Learner page <done>
-5. Create the base modal that will appear in the learner page once the user hits "Fact check my answers"
+5. Create the base modal that will appear in the learner page once the user hits "Fact check my answers" <done>
+    i. did 2 rather than one: one for hint and one for solution
 
 
 # Home Page <done>
@@ -35,3 +36,26 @@ we will build 3 sections, each section will corrospond to a seprate page.
 
 - so we need a code element
 - and 2 card elements as well
+
+# Modals <done>
+
+brainstorm: 
+the modal should include
+- supporive text
+- maybe a friendly error icon 
+- a space for the hint
+- a button to close the modal
+
+al though i think we can ignore the icon for now as it might be not fitting with our IDE type style and might be disencoraging for the user. 
+
+**But if we have time we should at least test it to see if it would be nice. 
+
+Requirements:
+- The modal card
+- an h2 tag for the main text
+- a smaller box/card for the hint
+- a p element for the hint itself
+- the hint text should be styles diffrently than the actually hint and should be surrounded with the strong element
+- a button to close the modal
+
+i decided to add another modal for the final solution as that's set-up is a bit different. 
