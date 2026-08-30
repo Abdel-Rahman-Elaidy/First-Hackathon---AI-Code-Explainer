@@ -30,6 +30,11 @@ Lets just brain dump them and orgnize them later on
 - the text area for writing the explnation
 - cards (2): one for big picture explanation and one for line by line explanation
 
+UPDATE:
+decided to make the components style sheet into styles.css as that fits it intented purpose more 
+
+This will only include looks
+
 
 # Problems encountered (should be solved)
 1. unknown # of CSS pages and their purposes <solved>
@@ -39,4 +44,5 @@ Lets just brain dump them and orgnize them later on
 5. How can we create a button that moves us from the explainer page to the learner page (for now I will use an empty button element)
 6. How can we create the button in the learner page that takes you back to explainer page
 7. How can we create the button that facts checks the input written in the learner page
+8. The text in the button seems to shift in position ever so slightly when i hover over the button
 

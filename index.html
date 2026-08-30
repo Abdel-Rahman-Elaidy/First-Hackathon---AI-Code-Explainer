@@ -7,11 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/layouts.css">
-
+    <link rel="stylesheet" href="./css/Styles.css">
+    <link rel="stylesheet" href="./css/Reset & Variables.css">
+    <link rel="stylesheet" href="./css/Layout.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,8 +29,8 @@
         </nav>
     </header>
     <main>
-        <section id="Home">
-            <h1>Welcome to AI Code Explainer</h1>
+        <section id="Home" hidden>
+            <h1>Welcome to <span class="heading-color-shift">AI Code Explainer</span></h1>
             <p class="description">Paste your code below and I'll explain it to you</p>
 
             <form>
@@ -54,7 +50,7 @@
             <a class="btn btn-secondary" id="guide-btn" href="./Guide.html" target="_blank">How To Guide</a>
         </section>
 
-        <section id="Explainer">
+        <section id="Explainer" hidden>
             <!--This will take up the right side of the page-->
             <code id="sumbitted-code-container">
                 <!--This will contained the sumbited code-->
@@ -67,13 +63,13 @@
             <div class="card">
                 <!--This will contain the big picture explanation-->
                 <h2>Big Picture Explnation</h2>
-                <p class="description">This explains the code from a zoomed out prespictive</p>
+                <p class="ai-explnation">The big picture explanation should go here</p>
 
             </div>
             <div class="card">
                 <!--This will contain the line by line explanation-->
                 <h2>Line by Line Explanation</h2>
-                <p class="description">This explains each small detail of the code</p>
+                <p class="ai-explnation">The line by line explnation should go here</p>
                 
             </div>
             <button class="btn btn-primary">Start your challenge</button>            
@@ -109,9 +105,9 @@
                     <h2>Explain <strong>WHY</strong> you wrote the code that you wrote</h2>
                     <p class="description">This confirms do you really understand what you wrote</p>
                     <textarea
-                        id="explnation-textare"
+                        id="explanation-textarea"
                         form="rewrite-explnation-form"
-                        name="explnation-attempt"
+                        name="explanation-attempt"
                         placeholder="Write why you wrote the code that you wrote here"
                         autocorrect="on"
                         spellcheck="true"
@@ -122,7 +118,7 @@
                 </div>           
                 <button class="btn btn-primary" type="submit">Fact check my answers</button>
             </form>
-            <button>Go back to the past page</button>
+            <button class="btn btn-secondary">Go back to the past page</button>
         </section>
     </main>
 

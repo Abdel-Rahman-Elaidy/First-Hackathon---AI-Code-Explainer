@@ -1,0 +1,152 @@
+/* Nav bar */ 
+
+.nav-bar {
+    background-color: var(--color-bg-2);
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-text-2);
+}
+
+#logo-app-name {
+    color: var(--color-text);
+    font-weight: 600;
+    font-family: var(--font-code);
+    font-size: 1rem;
+}
+
+.my-name {
+    color: var(--color-text);
+    font-family: var(--font-code);
+    font-size: 1rem;
+}
+
+/* Home Page Styles */
+
+h1 {
+    color: var(--color-text);
+}
+
+.heading-color-shift {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    padding: 3px;
+    border-radius: var(--raduis-sm);
+    font-family: var(--font-code);
+}
+
+a {
+    font-size: 0.8rem;
+    color: var(--color-text);
+}
+
+
+/* === Components === */ 
+
+pre {
+    background: black;
+    color: var(--color-text-2);
+    font-family: var(--font-code);
+    font-size: 1rem;
+}
+
+/* Text Elements */
+
+h2 {
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.description {
+    color: var(--color-text-2);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.ai-explnation {
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Buttons */
+
+.btn {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: var(--raduis-md);
+    font-family: var(--font-text);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    transform: scale(1.02) translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+/* Text Areas */
+
+#submitted-code-textarea {
+    background-color: var(--color-bg-2);
+    color: var(--color-text);
+    font-family: var(--font-code);
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    box-shadow: 0 0 2px var(--color-text-2);
+}
+
+#submitted-code-textarea:focus {
+    outline: 3px solid var(--color-primary);
+}
+
+#rewrite-textarea, #explanation-textarea {
+    background-color: var(--color-bg-2);
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    border: none;
+}
+
+#rewrite-textarea:focus, #explanation-textarea:focus {
+    border: none;
+    outline: none;
+}
+
+
+/* Cards */
+
+.card {
+    padding: 10px 15px;
+    border-radius: var(--raduis-lg);
+    background-color: var(--color-bg-2);
+    border: 1px solid var(--color-secondary);
+}
+
+.modal-card, .modal-card-final {
+    border: 1px solid var(--color-primary);
+}
+
+
+
+
+
+

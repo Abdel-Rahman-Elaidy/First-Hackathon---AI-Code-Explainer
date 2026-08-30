@@ -1,6 +1,10 @@
 :root {
-    --color-bg: #1a1a1aff;
-    --color-text: #fceeef;
+    --color-bg: hsl(0, 0%, 10%);
+    --color-bg-2: hsl(0, 0%, 15%);
+
+    --color-text: hsl(356, 70%, 95%);
+    --color-text-2: hsl(0, 0%, 85%);
+
     --color-primary: #28513d;
     --color-primary-hover: #214332;
     --color-secondary: #304550;
@@ -20,8 +24,6 @@
     box-sizing: border-box;
 }
 
-/* This acts as a defult. (According to my understanding) */
-
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -29,4 +31,8 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
 }
