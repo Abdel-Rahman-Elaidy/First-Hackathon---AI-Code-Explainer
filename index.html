@@ -25,32 +25,36 @@
     <header>
         <nav class="nav-bar">
             <p id="logo-app-name">AI Code Explainer</p>
-            <p class="my-name">Made by Abdul Rahman</p>
+            <p class="my-name">Made by Abdul-Rahman</p>
         </nav>
     </header>
     <main>
         <section id="Home" hidden>
-            <h1>Welcome to <span class="heading-color-shift">AI Code Explainer</span></h1>
-            <p class="description">Paste your code below and I'll explain it to you</p>
+            <div class="home-top-content">
+                <h1>Welcome to <span class="heading-color-shift">AI Code Explainer</span></h1>
+                <p class="description" id="description-home">Paste your code below and I'll explain it to you</p>
+            </div>
 
-            <form>
+            <form id="sumbitted-code-form">
                 <textarea 
                     id="submitted-code-textarea" 
                     name="submitted-code" 
                     cols="50" 
-                    rows="25"
+                    rows="15"
                     placeholder="Paste your code here" 
                     required 
                     autocorrect="off" 
                     spellcheck="false"></textarea>
-                <button type="sumbit" class="btn btn-primary" id="start-btn">Explain the code</button>
             </form>
 
-            <!--2 possible solutions for a button to link to a page: 1) style <a> as a button 2) Create a form that links to the page once summbited (the form is actually empty)-->
-            <a class="btn btn-secondary" id="guide-btn" href="./Guide.html" target="_blank">How To Guide</a>
+            <div class="btn-container">
+                <button type="sumbit" class="btn btn-primary" id="start-btn" form="sumbitted-code-form">Explain the code</button>
+                <!--2 possible solutions for a button to link to a page: 1) style <a> as a button 2) Create a form that links to the page once summbited (the form is actually empty)-->
+                <a class="btn btn-secondary" id="guide-btn" href="./Guide.html" target="_blank">How To Guide</a>
+            </div>
         </section>
 
-        <section id="Explainer" hidden>
+        <section id="Explainer">
             <!--This will take up the right side of the page-->
             <code id="sumbitted-code-container">
                 <!--This will contained the sumbited code-->
@@ -75,7 +79,7 @@
             <button class="btn btn-primary">Start your challenge</button>            
         </section>
 
-        <section id="Learner">
+        <section id="Learner" hidden>
             <!--This will take up the left side of the page-->
             <code id="sumbitted-gab-container">
                 <!--This will contained the sumbited code with the gab -->
@@ -122,7 +126,7 @@
         </section>
     </main>
 
-    <div class="card modal-card">
+    <div class="card modal-card" hidden>
         <h2>You're almost there!</h2>
         <p class="description">Here is a hint!</p>
         <div class="modal-hint-box">
@@ -132,7 +136,7 @@
         <button class="btn btn-primary">Let's do this again</button>
     </div>
 
-    <div class="card modal-card-final">
+    <div class="card modal-card-final" hidden>
         <h2>Here is the solution</h2>
         <div class="modal-solution-box">
             <p class="solution-title"><strong>Solution:</strong></p>

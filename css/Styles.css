@@ -109,11 +109,11 @@ h2 {
     font-size: 1rem;
     line-height: 1.5;
     resize: none;
-    box-shadow: 0 0 2px var(--color-text-2);
+    border-radius: var(--raduis-sm);
 }
 
 #submitted-code-textarea:focus {
-    outline: 3px solid var(--color-primary);
+    outline: 2px solid var(--color-secondary);
 }
 
 #rewrite-textarea, #explanation-textarea {
