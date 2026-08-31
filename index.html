@@ -56,7 +56,7 @@
 
         <section id="Explainer">
             <!--This will take up the right side of the page-->
-            <code id="sumbitted-code-container">
+            <code id="sumbitted-code-container" style="grid-area: code;">
                 <!--This will contained the sumbited code-->
                 <pre>
                     <p>sample "code"</p>
@@ -64,19 +64,19 @@
             </code>
 
             <!--this will take up the left side of the page-->
-            <div class="card">
+        
+            <div class="card" style="grid-area: big-picture;">
                 <!--This will contain the big picture explanation-->
                 <h2>Big Picture Explnation</h2>
                 <p class="ai-explnation">The big picture explanation should go here</p>
 
             </div>
-            <div class="card">
+            <div class="card" style="grid-area: line-by-line;" id="line-by-line-card">
                 <!--This will contain the line by line explanation-->
                 <h2>Line by Line Explanation</h2>
                 <p class="ai-explnation">The line by line explnation should go here</p>
-                
+                <button class="btn btn-primary" id="challenge-btn">Start your challenge</button>  
             </div>
-            <button class="btn btn-primary">Start your challenge</button>            
         </section>
 
         <section id="Learner" hidden>

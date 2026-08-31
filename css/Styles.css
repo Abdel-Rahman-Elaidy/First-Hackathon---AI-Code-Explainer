@@ -136,14 +136,14 @@ h2 {
 
 .card {
     padding: 10px 15px;
-    border-radius: var(--raduis-lg);
     background-color: var(--color-bg-2);
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--color-primary);
 }
 
 .modal-card, .modal-card-final {
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-secondary);
 }
+
 
 
 
