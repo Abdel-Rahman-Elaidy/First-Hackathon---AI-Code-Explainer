@@ -47,7 +47,7 @@
                     spellcheck="false"></textarea>
             </form>
 
-            <div class="btn-container">
+            <div class="btn-container-home">
                 <button type="sumbit" class="btn btn-primary" id="start-btn" form="sumbitted-code-form">Explain the code</button>
                 <!--2 possible solutions for a button to link to a page: 1) style <a> as a button 2) Create a form that links to the page once summbited (the form is actually empty)-->
                 <a class="btn btn-secondary" id="guide-btn" href="./Guide.html" target="_blank">How To Guide</a>
@@ -79,7 +79,7 @@
             </div>
         </section>
 
-        <section id="Learner">
+        <section id="Learner" hidden>
             <!--This will take up the left side of the page-->
             <code id="sumbitted-gab-container">
                 <!--This will contained the sumbited code with the gab -->
@@ -125,22 +125,33 @@
     <div class="card modal-card" hidden>
         <h2>You're almost there!</h2>
         <p class="description">Here is a hint!</p>
-        <div class="modal-hint-box">
-            <p class="hint-title"><strong>Hint:</strong></p>
-            <p>The hints should go here</p>
+        <div class="modal-main-content-container">
+            <div class="modal-hint-box">
+                <p class="hint-title"><strong>Hint:</strong></p>
+                <p class="hint-text">The hints should go here</p>
+            </div>
+            <button class="btn btn-primary" >Let's do this again</button>
         </div>
-        <button class="btn btn-primary">Let's do this again</button>
     </div>
 
     <div class="card modal-card-final" hidden>
         <h2>Here is the solution</h2>
-        <div class="modal-solution-box">
-            <p class="solution-title"><strong>Solution:</strong></p>
-            <p>This solution should be here</p>
+        <div class="modal-main-content-container">
+            <div class="modal-solution-box">
+                <p class="solution-title"><strong>Solution:</strong></p>
+                <p class="solution-text">This solution should be here</p>
+            </div>
+            <button class="btn btn-primary">Let's do this one last time</button>
         </div>
-        <button class="btn btn-primary">Let's do this one last time</button>
     </div>
 
+    <div class="card api-key-modal" hidden>
+        <h2>Enter your Gemini API Key</h2>
+        <p class="description">This is needed to connect to the AI</p>
+        <input type="text" id="api-key-input" placeholder="Enter your API key here" required>
+        <button class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" href="https://aistudio.google.com/app/apikey" target="_blank">Where do I find my API Key?</a>
+    </div>
 </body>
 
 </html>

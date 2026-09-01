@@ -40,6 +40,16 @@ a {
 
 /* === Components === */ 
 
+#api-key-input {
+    background-color: var(--color-bg-1);
+    color: var(--color-text);
+    font-family: var(--font-code);
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: var(--raduis-sm);
+    border: 1px solid var(--color-text-2);
+}
+
 pre {
     background: black;
     color: var(--color-text-2);
@@ -62,6 +72,12 @@ h2 {
 .ai-explnation {
     color: var(--color-text);
     font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hint-text, .solution-text, .hint-title, .solution-title {
+    font-family: var(--font-text);
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -129,7 +145,7 @@ h2 {
     outline: none;
 }
 
-/* Cards */
+/* Cards / Modals */
 
 .card {
     padding: 10px 15px;
@@ -137,6 +153,15 @@ h2 {
     border: 1px solid var(--color-primary);
 }
 
-.modal-card, .modal-card-final {
+.modal-card, .modal-card-final, .api-key-modal {
     border: 1px solid var(--color-secondary);
+}
+
+
+.modal-hint-box, .modal-solution-box {
+    background-color: var(--color-secondary-hover);
+    border-radius: var(--raduis-lg);
+    padding: 10px 15px;
+    margin-top: 10px; /* This is a total of 20px due to line below */
+    margin: 10px;
 }

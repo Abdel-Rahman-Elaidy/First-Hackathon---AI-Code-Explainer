@@ -10,7 +10,7 @@ now we want the pages to look as envisioned in the brainstrom.md file
 2. Home page positioning & spacing <done>
 3. Explaination page positioning & spacing <done>
 4. Learners page positioning & spacing <done>
-5. BOTH modals positioning & spacing
+5. ALL modals positioning & spacing <done>
 6. Add responsive design <delayed>
 7. patch up juice / small details <delayed>
 
@@ -22,3 +22,6 @@ I need to work on the js and API which i have never done before!!
 
 let's do responsive design later on. 
 
+# FORGOT SMTH
+
+I forgot to add the API Key modal. So will create that real quick and come back to this. <done>

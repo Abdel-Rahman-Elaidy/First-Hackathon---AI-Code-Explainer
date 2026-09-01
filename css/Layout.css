@@ -123,3 +123,44 @@ h2 {
 #explanation-textarea::placeholder, #rewrite-textarea::placeholder {
     padding: 0.2rem;
 }
+
+/* === Modals === */ 
+
+.modal-card, .modal-card-final, .api-key-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.modal-main-content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#api-key-input {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.api-key-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
