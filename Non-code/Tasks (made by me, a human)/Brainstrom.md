@@ -45,4 +45,5 @@ This will only include looks
 6. How can we create the button in the learner page that takes you back to explainer page
 7. How can we create the button that facts checks the input written in the learner page
 8. The text in the button seems to shift in position ever so slightly when i hover over the button
+9. The "go to previous page" button in learner is, somehow, connected to the form (i.e i need to fill out the form to use it even though it's main use case happens when you cannot fill out the form)
 

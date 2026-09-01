@@ -123,14 +123,11 @@ h2 {
     font-size: 1rem;
     line-height: 1.5;
     resize: none;
-    border: none;
 }
 
 #rewrite-textarea:focus, #explanation-textarea:focus {
-    border: none;
     outline: none;
 }
-
 
 /* Cards */
 
@@ -143,10 +140,3 @@ h2 {
 .modal-card, .modal-card-final {
     border: 1px solid var(--color-secondary);
 }
-
-
-
-
-
-
-

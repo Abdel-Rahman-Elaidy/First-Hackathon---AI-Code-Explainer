@@ -54,7 +54,7 @@
             </div>
         </section>
 
-        <section id="Explainer">
+        <section id="Explainer" hidden>
             <!--This will take up the right side of the page-->
             <code id="sumbitted-code-container" style="grid-area: code;">
                 <!--This will contained the sumbited code-->
@@ -79,7 +79,7 @@
             </div>
         </section>
 
-        <section id="Learner" hidden>
+        <section id="Learner">
             <!--This will take up the left side of the page-->
             <code id="sumbitted-gab-container">
                 <!--This will contained the sumbited code with the gab -->
@@ -97,8 +97,6 @@
                         id="rewrite-textarea"
                         form="rewrite-explnation-form"
                         name="rewritten-code"
-                        rows="10"
-                        cols="25"
                         placeholder="Rewrite the code here"
                         autocorrect="off"
                         spellcheck="false"
@@ -115,14 +113,12 @@
                         placeholder="Write why you wrote the code that you wrote here"
                         autocorrect="on"
                         spellcheck="true"
-                        rows="10"
-                        cols="25"
                         required
                     ></textarea>
+                    <button class="btn btn-primary" type="submit">Fact check my answers</button>
+                    <button class="btn btn-secondary">Go to previous page</button>
                 </div>           
-                <button class="btn btn-primary" type="submit">Fact check my answers</button>
             </form>
-            <button class="btn btn-secondary">Go back to the past page</button>
         </section>
     </main>
 
