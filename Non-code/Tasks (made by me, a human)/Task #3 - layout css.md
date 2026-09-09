@@ -25,3 +25,4 @@ let's do responsive design later on.
 # FORGOT SMTH
 
 I forgot to add the API Key modal. So will create that real quick and come back to this. <done>
+I forgot another thing: a success modal. The thing that tells you did a great job once you finish the challenge. So will create that real quick and come back to this. <done>

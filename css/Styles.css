@@ -153,7 +153,7 @@ h2 {
     border: 1px solid var(--color-primary);
 }
 
-.modal-card, .modal-card-final, .api-key-modal {
+.modal-card, .modal-card-final, .api-key-modal, .success-modal {
     border: 1px solid var(--color-secondary);
 }
 

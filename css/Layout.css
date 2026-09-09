@@ -24,7 +24,7 @@ h1 {
     margin-top: 50px;
 }
 
-#sumbitted-code-form {
+#submitted-code-form {
     display: flex;
     justify-content: center;
     margin: 25px auto;
@@ -126,7 +126,7 @@ h2 {
 
 /* === Modals === */ 
 
-.modal-card, .modal-card-final, .api-key-modal {
+.modal-card, .modal-card-final, .api-key-modal, .success-modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -156,7 +156,7 @@ h2 {
     margin-bottom: 5px;
 }
 
-.api-key-modal {
+.api-key-modal, .success-modal {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

@@ -36,6 +36,25 @@ decided to make the components style sheet into styles.css as that fits it inten
 This will only include looks
 
 
+# JS start 
+
+now we are supposed to start coding the actaul logic of the app. Lets think about what we need to develop in order from hardest and most important to easiest and least important.
+
+this is a braindump 
+
+1. navigation - This is key so the app actually functions
+2. API key pop-up - This is important to get the key that ensures the whole app works
+3. explanation flow - this is technically the whole app. Here we are trying to get the sumbitted code to the AI and then get the big picture explanation and the line by line explnation back to the app
+4. learner page flow - here we need to do a couple of things like: 
+    1. The functionality for the gab generation
+    2. The fact checking of the rewrite and the explanation
+    3. making the "go to the previous page" button work
+
+this is a lot so lets make each step a task each as i never did this before and i don't even know javascript !!
+
+but first: am i missing something?? No. I hope. 
+
+
 # Problems encountered (should be solved)
 1. unknown # of CSS pages and their purposes <solved>
 2. What compontents do we need? <solved?>
