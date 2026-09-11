@@ -5,6 +5,7 @@ here we are trying to get the api key and store it to local storage so we can ac
 Tasks:
 1. Make API key modal pop up when the user clicks the pastes code into simbitted-code-textare or press the start-btn in the home page (use the easier one for coding)
 2. store the api key for usage in local storage
+3. Prevent the modal from opening again once the key is stored in local storage
 
 I think that is it. Let's see how hard this is !!
 
@@ -113,6 +114,53 @@ I have a few solutions
 
 lets try these out. solution 1 works and it gets the job done for now. (this is the first time I do what i think is right rather than following the AI guide, guess i am learning afterall :D)
 
+## Local storage
+
+here we face a couple of problems:
+1. The API key input field isn't required which it should be (it is requred but it is not enforced) <fixed, as it is implicity reqired so the app can function - the explain code button shouldn't work if the api key isn't in local storage>
+2. The button should only work (i.e store the data in local storage & hide the modal) if data is in the input field 
+3. we should fact check the key somehow (the simpliest solution would be clear instructuons)
+4. Actually storing the Key in local storage when we press the button
+
+lets deal with each problem one by one
+
+**lets fix problem #2.** 
+
+To do this we need to do a few things:
+- when we click the button, we need to check if the input field has the API key. (the simpleist way to do this is to just check if its empty or not) <done>
+    - If yes, we hide the modal and store the API key in the backend
+    - if no, we show an alert so the user knows the API key is required before proceeding <done>
+
+to check for input field values we can use the element.value and see if its equal to the length of the minimum API key length. 
+
+This made me relize a big problem. Local storage isn't secure enough; this means i need to lear backend!! This changes things massivley. Now i need to learn backend, js, and AI programming all in 20 days. I wil get roasted if i don't learn fast enough.
+
+### Backend Problem
+
+now to do the following task: If yes, we hide the modal and store the API key in the backend
+
+We need to do a few things.
+- Run the backend server <done>
+- Save the API key to the backend server 
+- hide the modal
+- do the 2 tasks above when we click on the sbmit button
+
+**Sending the API key to the backend**
+
+from what i understood to do this we need to:
+- use an app.post / POST request to get the data
+- then parse that data using a middleware (so something like express.json)
+- lastly we need to access the data in the POST request using req.body and assign it a variable to save it in memory. 
+
+update of plans. 
+
+the express.JSON deals with js objects, which API key isn't. it is just a string, so we will use a whole new process to send string (AI sucks lol)
+
+now are using the fetch function. The process is as follows: 
+- we will send the api key as string using the fetch function with the POST methode
+- then we will store the key in a variable in our backend
+
+lets do this
 
 
 

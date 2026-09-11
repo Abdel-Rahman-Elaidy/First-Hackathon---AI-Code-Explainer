@@ -1,6 +1,6 @@
 // comment rules: I will explain everything so as i would type the commit before or as i create the code. This helps me focus.
 
-// Refrence for page elements (vars, let, const)
+// == Variables == 
 
 const body = document.body;
 
@@ -16,6 +16,9 @@ const solutionModal = document.getElementById("solution-modal");
 
 const submittedCodeTextarea = document.getElementById("submitted-code-textarea");
 const apiModalSubmitBtn = document.getElementById("api-modal-submit-btn");
+const apiKeyInput = document.getElementById("api-key-input");
+
+const apiKey = apiKeyInput.value;
 
 // == Functions ==
 
@@ -30,14 +33,34 @@ function outsideClickHideModal (event) {
 // once the js runs
 home.hidden = false;
 
-// listen for an input update using events
+// shows modal and changes opacity of background
 submittedCodeTextarea.addEventListener("input", () => {
     apiKeyModal.hidden = false
     home.style.opacity = "0.5"
 });
 
-// checks for clicks and runs the function
+// checks for clicks and hides the modal if clicked outside of modal
 body.addEventListener("click", outsideClickHideModal);
+
+
+// Insures the button is disabled unless there is an API key inserted
+apiKeyInput.addEventListener("input", () => {
+    if (apiKeyInput.value.length >= 1) {
+        apiModalSubmitBtn.disabled = false;
+    } else {
+        apiModalSubmitBtn.disabled = true;
+        alert("Please enter your API key to continue")
+    }
+})
+
+apiModalSubmitBtn.addEventListener("click", () =>{
+    fetch("http://localhost:3000/api/key", {
+        method: "POST",
+        body: apiKey
+    });
+})
+
+
 
 
 

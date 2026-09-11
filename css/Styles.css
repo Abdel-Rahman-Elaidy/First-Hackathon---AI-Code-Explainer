@@ -107,6 +107,12 @@ h2 {
     background-color: var(--color-primary-hover);
 }
 
+.btn-primary:disabled {
+    background-color: var(--color-primary-hover);
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
 .btn-secondary {
     background-color: var(--color-secondary);
     color: var(--color-text);
