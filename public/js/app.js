@@ -1,6 +1,6 @@
 // comment rules: I will explain everything so as i would type the commit before or as i create the code. This helps me focus.
 
-// == Variables == 
+// Refrenced HTML elements
 
 const body = document.body;
 
@@ -17,8 +17,6 @@ const solutionModal = document.getElementById("solution-modal");
 const submittedCodeTextarea = document.getElementById("submitted-code-textarea");
 const apiModalSubmitBtn = document.getElementById("api-modal-submit-btn");
 const apiKeyInput = document.getElementById("api-key-input");
-
-const apiKey = apiKeyInput.value;
 
 // == Functions ==
 
@@ -53,12 +51,17 @@ apiKeyInput.addEventListener("input", () => {
     }
 })
 
-apiModalSubmitBtn.addEventListener("click", () =>{
+apiModalSubmitBtn.addEventListener("click", () => {
+    const apikey = apiKeyInput.value
+
     fetch("http://localhost:3000/api/key", {
         method: "POST",
-        body: apiKey
-    });
+        body: apikey
+    })
+
+    console.log("submit button is clicked")
 })
+
 
 
 
