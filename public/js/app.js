@@ -30,16 +30,20 @@ function outsideClickHideModal (event) {
 
 // once the js runs
 home.hidden = false;
+apiModalSubmitBtn.disabled = true;
+let submitedApiKeyStatus = false;
 
 // shows modal and changes opacity of background
 submittedCodeTextarea.addEventListener("input", () => {
-    apiKeyModal.hidden = false
-    home.style.opacity = "0.5"
+    // only unhide the modal if the api key hasn't been submitted yet
+    if (submitedApiKeyStatus === true) {
+        apiKeyModal.hidden = true;
+        home.style.opacity = "1";
+    } else {
+        apiKeyModal.hidden = false;
+        home.style.opacity = "0.5";
+    }
 });
-
-// checks for clicks and hides the modal if clicked outside of modal
-body.addEventListener("click", outsideClickHideModal);
-
 
 // Insures the button is disabled unless there is an API key inserted
 apiKeyInput.addEventListener("input", () => {
@@ -51,16 +55,50 @@ apiKeyInput.addEventListener("input", () => {
     }
 })
 
-apiModalSubmitBtn.addEventListener("click", () => {
-    const apikey = apiKeyInput.value
+// checks for clicks and hides the modal if clicked outside of modal
+body.addEventListener("click", outsideClickHideModal);
 
-    fetch("http://localhost:3000/api/key", {
-        method: "POST",
-        body: apikey
-    })
+// Sends api key to backend
+apiModalSubmitBtn.addEventListener("click", async () => {
+    apiModalSubmitBtn.disabled = true;
 
-    console.log("submit button is clicked")
-})
+    const apiKey = apiKeyInput.value.trim();
+
+    if (!apiKey) {
+        alert("please enter an API Key");
+        return;
+    } else {
+        apiModalSubmitBtn.disabled = false;
+    };
+
+    try {
+        const response = await fetch("/store-key", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({apiKey})
+        })
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("API Key is saved successfuly");
+            submitedApiKeyStatus = true;
+            apiKeyModal.hidden = true;
+            home.style.opacity = "1";
+        } else {
+            console.error("Error: ", (data.message || "Unknown error"));
+            alert("Failed to save API key.");
+        }
+
+    } catch (err) {
+        console.error ("Failed to save API key:", err);
+        alert ("Failed to save API key.");
+    }
+});
+
+
 
 
 
