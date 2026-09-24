@@ -3,9 +3,9 @@
 here we are trying to get the api key and store it to local storage so we can activate the AI. 
 
 Tasks:
-1. Make API key modal pop up when the user clicks the pastes code into simbitted-code-textare or press the start-btn in the home page (use the easier one for coding)
-2. store the api key for usage in local storage
-3. Prevent the modal from opening again once the key is stored in local storage
+1. Make API key modal pop up when the user clicks the pastes code into simbitted-code-textare or press the start-btn in the home page (use the easier one for coding) <done>
+2. store the api key for usage in the backend <done>
+3. Prevent the modal from opening again once the key is stored in the backend <done>
 
 I think that is it. Let's see how hard this is !!
 

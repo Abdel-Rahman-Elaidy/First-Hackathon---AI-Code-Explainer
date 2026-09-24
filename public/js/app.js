@@ -17,6 +17,7 @@ const solutionModal = document.getElementById("solution-modal");
 const submittedCodeTextarea = document.getElementById("submitted-code-textarea");
 const apiModalSubmitBtn = document.getElementById("api-modal-submit-btn");
 const apiKeyInput = document.getElementById("api-key-input");
+const submittedCodeTextareaForm = document.getElementById("submitted-code-form");
 
 // == Functions ==
 
@@ -97,6 +98,42 @@ apiModalSubmitBtn.addEventListener("click", async () => {
         alert ("Failed to save API key.");
     }
 });
+
+
+//Send submitted code to backend
+submittedCodeTextareaForm.addEventListener("submit", async (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(submittedCodeTextareaForm);
+    const code = formData.get("submitted-code").trim();
+
+    try {
+        const response = await fetch("/submitted-code",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({code})
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            // navigation to explainer page logic 
+            home.hidden = true;
+            explainer.hidden = false;
+        } else {
+            console.error("Error: ", (data.message || "Unknown error"));
+            alert("Failed to submit code. Try again.");
+        }
+
+    } catch(error) {
+        console.error("Failed to submit code", error);
+        alert("Failed to submit code. Try again.");
+    }
+})
+
+
 
 
 
